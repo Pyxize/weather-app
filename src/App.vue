@@ -10,7 +10,3 @@ import Navigation from "./components/navigation/navigation.vue";
     <router-view></router-view>
   </div>
 </template>
-
-<style scoped>
-
-</style>
