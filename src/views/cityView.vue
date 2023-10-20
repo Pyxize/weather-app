@@ -10,7 +10,7 @@ const forecastDay = ref([])
 const route = useRoute();
 const getWeatherData = async () => {
   try {
-    const weatherData = await axios.get(`http://api.weatherapi.com/v1/forecast.json?&days=7&key=${import.meta.env.VITE_KEY_WEATHER}&q=${route.params.city}`)
+    const weatherData = await axios.get(`https://api.weatherapi.com/v1/forecast.json?&days=7&key=${import.meta.env.VITE_KEY_WEATHER}&q=${route.params.city}`)
     return weatherData.data
   } catch(error) {
     console.error(error)

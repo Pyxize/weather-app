@@ -28,7 +28,7 @@ const getSearchResult = () => {
   queryTimeout.value = setTimeout(async () => {
     if (querySearch.value !== '') {
       try {
-        const result = await axios.get(`http://api.weatherapi.com/v1/search.json?key=caab8f3d7152469aa78113103232109&q=${querySearch.value}`);
+        const result = await axios.get(`https://api.weatherapi.com/v1/search.json?key=caab8f3d7152469aa78113103232109&q=${querySearch.value}`);
         resultSearch.value = result.data;
       } catch {
         searchError.value = true;
