@@ -42,7 +42,7 @@ forecastDay.value = weatherData.forecast.forecastday
 
     <div class="w-full max-w-screen-sm bg-white p-10 rounded-xl ring-8 ring-white ring-opacity-40">
       <div class="mx-8 text-slate-800">
-        <h2 class="mb-4">Prévisions sur 7 jours</h2>
+        <h2 class="mb-4">Prévisions sur 3 jours</h2>
           <div v-for="weatherDays in forecastDay" key="weatherDays.date_epoch" class="flex items-center">
             <p class="flex-1">{{
                 new Date(weatherDays.date_epoch * 1000).toLocaleDateString("fr-fr", {weekday: "long"})
